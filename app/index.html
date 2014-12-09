@@ -13,24 +13,33 @@
     <div id="afui" class="ios7">
       <!-- 各画面共通に利用されるヘッダ -->
       <div id="header">
+        <h1>ホーム</h1>
         <a id="menubadge" onclick="af.ui.toggleRightSideMenu()" class="menuButton"></a>
       </div>
+
 
       <!-- コンテンツ領域 -->
       <div id="content">
         <!-- ホーム画面 -->
         <div id="home" data-title="ホーム" class="panel">
-          <h2>今回の内容</h2>
-          <p>
-            今回は Intel <a href="http://app-framework-software.intel.com">App Framework</a>を利用して、
-            ユーザインタフェースを設計します。
-          </p>
+          <div style="height: 20px; width: 100%;"></div>
           <ul class="list inset">
+            <li><a href="#view">酒-list</a></li>
+            <li><a href="#add">今夜の酒</a></li>
             <li><a href="#icons">アイコンリスト</a></li>
             <li><a href="#buttons">ボタンリスト</a></li>
             <li><a href="#foxkeh-1">スライドショー的な</a>
           </ul>
         </div>
+
+        <div id="view" data-title="View" class="panel">
+
+        </div>
+
+        <div id="add" data-title="Add" class="panel">
+
+        </div>
+
 
         <!-- アイコンリスト -->
         <div id="icons" data-title="アイコンリスト" class="panel">
@@ -187,8 +196,8 @@
       <!-- フッタ -->
       <div id="navbar">
         <a href="#home" class="icon home">Home</a>
-        <a href="#icons" class="icon folder">アイコン</a>
-        <a href="#buttons" class="icon folder">ボタン</a>
+        <a href="#view" class="icon folder">View</a>
+        <a href="#add" class="icon add">Add</a>
         <a href="#foxkeh-1" class="icon picture">フォクすけ</a>
       </div>
 
@@ -197,7 +206,7 @@
         <ul class="list">
           <li class="divider">App Frameworkについて</li>
           <li><a href="#home">ホーム</a></li>
-          <li><a href="#icons">アイコンリスト</a></li>
+          <li><a href="#button">アイコンリスト</a></li>
           <li><a href="#buttons">ボタンリスト</a></li>
           <li class="divider">スライドショー</li>
           <li><a href="#foxkeh-1">1枚目</a></li>
